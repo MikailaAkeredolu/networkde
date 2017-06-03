@@ -1,0 +1,594 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "y4m3-siyk",
+      "name" : "Delaware - Volunteer Activities",
+      "averageRating" : 0,
+      "category" : "National Service",
+      "createdAt" : 1476455911,
+      "displayType" : "chart",
+      "downloadCount" : 6,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1479236750,
+      "licenseId" : "PUBLIC_DOMAIN",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 24893342,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1479236190,
+      "publicationGroup" : 12954791,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1479229553,
+      "rowsUpdatedBy" : "x3da-yqfi",
+      "tableId" : 13904124,
+      "totalTimesRated" : 0,
+      "viewCount" : 201,
+      "viewLastModified" : 1478544044,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 277506460,
+        "name" : "Location Name",
+        "dataTypeName" : "text",
+        "fieldName" : "location_name",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 38245391,
+        "width" : 256,
+        "cachedContents" : {
+          "largest" : "Delaware",
+          "non_null" : 13,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Delaware",
+            "count" : 20
+          } ],
+          "smallest" : "Delaware"
+        },
+        "format" : { }
+      }, {
+        "id" : 277506461,
+        "name" : "Location Type",
+        "dataTypeName" : "text",
+        "fieldName" : "location_type",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 38245392,
+        "width" : 256,
+        "cachedContents" : {
+          "largest" : "State",
+          "non_null" : 13,
+          "null" : 0,
+          "top" : [ {
+            "item" : "State",
+            "count" : 20
+          } ],
+          "smallest" : "State"
+        },
+        "format" : { }
+      }, {
+        "id" : 277506462,
+        "name" : "Value Category",
+        "dataTypeName" : "text",
+        "fieldName" : "value_category",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 38245393,
+        "width" : 268,
+        "cachedContents" : {
+          "largest" : "Volunteer Activities (2013-15)",
+          "non_null" : 13,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Volunteer Activities (2013-15)",
+            "count" : 20
+          } ],
+          "smallest" : "Volunteer Activities (2013-15)"
+        },
+        "format" : { }
+      }, {
+        "id" : 277506463,
+        "name" : "Value Name",
+        "dataTypeName" : "text",
+        "fieldName" : "value_name",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 38245394,
+        "width" : 220,
+        "cachedContents" : {
+          "largest" : "Tutor or teach",
+          "non_null" : 13,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Coach, referee, supervise sports team",
+            "count" : 20
+          }, {
+            "item" : "Tutor or teach",
+            "count" : 19
+          }, {
+            "item" : "Mentor youth",
+            "count" : 18
+          }, {
+            "item" : "Be an usher, greeter, or minister",
+            "count" : 17
+          }, {
+            "item" : "Collect, prepare, distribute or serve food",
+            "count" : 16
+          }, {
+            "item" : "Collect, make, or distribute clothing",
+            "count" : 15
+          }, {
+            "item" : "Fundraise or sell items to raise money",
+            "count" : 14
+          }, {
+            "item" : "Provide counseling, medical care, fire/EMS",
+            "count" : 13
+          }, {
+            "item" : "Provide general office services",
+            "count" : 12
+          }, {
+            "item" : "Provide professional or management",
+            "count" : 11
+          }, {
+            "item" : "Engage in music, performance, or other",
+            "count" : 10
+          }, {
+            "item" : "Engage in general labor",
+            "count" : 9
+          }, {
+            "item" : "Any other type of activity/specify",
+            "count" : 8
+          } ],
+          "smallest" : "Any other type of activity/specify"
+        },
+        "format" : { }
+      }, {
+        "id" : 277506465,
+        "name" : "METRIC",
+        "dataTypeName" : "number",
+        "fieldName" : "metric",
+        "position" : 5,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38245395,
+        "width" : 172,
+        "cachedContents" : {
+          "largest" : "0.29251169900000001",
+          "non_null" : 13,
+          "average" : "0.1519404889230769",
+          "null" : 0,
+          "top" : [ {
+            "item" : "0.060797568000000003",
+            "count" : 20
+          }, {
+            "item" : "0.14361127200000001",
+            "count" : 19
+          }, {
+            "item" : "0.16387559300000001",
+            "count" : 18
+          }, {
+            "item" : "0.13389795700000001",
+            "count" : 17
+          }, {
+            "item" : "0.236929744",
+            "count" : 16
+          }, {
+            "item" : "0.15174185500000001",
+            "count" : 15
+          }, {
+            "item" : "0.29251169900000001",
+            "count" : 14
+          }, {
+            "item" : "0.074371066",
+            "count" : 13
+          }, {
+            "item" : "0.15825771299999999",
+            "count" : 12
+          }, {
+            "item" : "0.17495164799999999",
+            "count" : 11
+          }, {
+            "item" : "0.089176332999999997",
+            "count" : 10
+          }, {
+            "item" : "0.18735439400000001",
+            "count" : 9
+          }, {
+            "item" : "0.107749514",
+            "count" : 8
+          } ],
+          "smallest" : "0.060797568000000003",
+          "sum" : "1.975226356000000040"
+        },
+        "format" : { }
+      }, {
+        "id" : 277506464,
+        "name" : "Secondary Value Name",
+        "dataTypeName" : "text",
+        "fieldName" : "secondary_value_name",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39619942,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 0,
+          "null" : 13
+        },
+        "format" : { }
+      }, {
+        "id" : 277506466,
+        "name" : "YEAR",
+        "dataTypeName" : "text",
+        "fieldName" : "year",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 38245396,
+        "width" : 148,
+        "cachedContents" : {
+          "largest" : "2015",
+          "non_null" : 13,
+          "null" : 0,
+          "top" : [ {
+            "item" : "2015",
+            "count" : 20
+          } ],
+          "smallest" : "2015"
+        },
+        "format" : {
+          "align" : "right"
+        }
+      }, {
+        "id" : 277506467,
+        "name" : "LAT/LONG",
+        "dataTypeName" : "location",
+        "fieldName" : "location",
+        "position" : 8,
+        "renderTypeName" : "location",
+        "tableColumnId" : 38365550,
+        "width" : 206,
+        "cachedContents" : {
+          "largest" : {
+            "latitude" : "39.318523",
+            "longitude" : "-75.507141"
+          },
+          "non_null" : 13,
+          "null" : 0,
+          "top" : [ {
+            "item" : {
+              "latitude" : "39.318523",
+              "longitude" : "-75.507141"
+            },
+            "count" : 20
+          } ],
+          "smallest" : {
+            "latitude" : "39.318523",
+            "longitude" : "-75.507141"
+          }
+        },
+        "format" : {
+          "view" : "address_coords",
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      } ],
+      "displayFormat" : {
+        "seriesColumns" : [ { } ],
+        "fixedColumns" : [ "value_name" ],
+        "xAxis" : {
+          "valueInBar" : false,
+          "labelInBar" : true
+        },
+        "legend" : "bottom",
+        "hideDsgMsg" : false,
+        "yAxis" : {
+          "formatter" : {
+            "abbreviate" : true
+          }
+        },
+        "errorBarColor" : "#ff0000",
+        "chartType" : "bar",
+        "valueColumns" : [ {
+          "fieldName" : "metric",
+          "color" : "#003366"
+        } ],
+        "descriptionColumns" : [ { } ],
+        "legendDetails" : {
+          "showValueMarkers" : true,
+          "showSeries" : true
+        },
+        "sortSeries" : false
+      },
+      "grants" : [ {
+        "inherited" : true,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Public Domain"
+      },
+      "metadata" : {
+        "jsonQuery" : {
+          "where" : {
+            "metadata" : {
+              "unifiedVersion" : 2
+            },
+            "children" : [ {
+              "metadata" : {
+                "tableColumnId" : {
+                  "12954791" : 38245391
+                },
+                "freeform" : true,
+                "includeAuto" : 4,
+                "unifiedVersion" : 2,
+                "operator" : "EQUALS"
+              },
+              "columnFieldName" : "location_name",
+              "value" : "delaware",
+              "operator" : "EQUALS"
+            }, {
+              "metadata" : {
+                "tableColumnId" : {
+                  "12954791" : 38245393
+                },
+                "freeform" : false,
+                "operator" : "EQUALS"
+              },
+              "columnFieldName" : "value_category",
+              "value" : "Volunteer Activities (2013-15)",
+              "operator" : "EQUALS"
+            } ],
+            "operator" : "AND"
+          }
+        },
+        "rowLabel" : "Row",
+        "availableDisplayTypes" : [ "chart", "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "chart" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "qsgj-a8dh",
+        "displayName" : "LePage, Julie",
+        "lastNotificationSeenAt" : 1496249280,
+        "profileImageUrlLarge" : "/api/users/qsgj-a8dh/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/qsgj-a8dh/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/qsgj-a8dh/profile_images/TINY",
+        "roleName" : "administrator",
+        "screenName" : "LePage, Julie",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "query" : {
+        "filterCondition" : {
+          "type" : "operator",
+          "value" : "AND",
+          "children" : [ {
+            "type" : "operator",
+            "value" : "OR",
+            "children" : [ {
+              "type" : "operator",
+              "value" : "EQUALS",
+              "children" : [ {
+                "columnId" : 277506460,
+                "type" : "column"
+              }, {
+                "type" : "literal",
+                "value" : "delaware"
+              } ],
+              "metadata" : {
+                "freeform" : true
+              }
+            } ],
+            "metadata" : {
+              "tableColumnId" : {
+                "12954791" : 38245391
+              },
+              "freeform" : true,
+              "includeAuto" : 4,
+              "unifiedVersion" : 2,
+              "operator" : "EQUALS"
+            }
+          }, {
+            "type" : "operator",
+            "value" : "OR",
+            "metadata" : {
+              "tableColumnId" : {
+                "12954791" : 38245392
+              },
+              "operator" : "EQUALS",
+              "customValues" : [ [ "State" ] ]
+            }
+          }, {
+            "type" : "operator",
+            "value" : "OR",
+            "children" : [ {
+              "type" : "operator",
+              "value" : "EQUALS",
+              "children" : [ {
+                "columnId" : 277506462,
+                "type" : "column"
+              }, {
+                "type" : "literal",
+                "value" : "Volunteer Activities (2013-15)"
+              } ],
+              "metadata" : {
+                "freeform" : false
+              }
+            } ],
+            "metadata" : {
+              "tableColumnId" : {
+                "12954791" : 38245393
+              },
+              "operator" : "EQUALS"
+            }
+          } ],
+          "metadata" : {
+            "unifiedVersion" : 2
+          }
+        }
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "aj63-ec7w",
+        "displayName" : "Nerino",
+        "roleName" : "publisher",
+        "screenName" : "Nerino",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_nominations", "approve_nominations", "moderate_comments", "manage_stories", "feature_items", "change_configurations", "view_domain", "view_others_datasets", "create_pages", "edit_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "manage_provenance", "view_story", "view_unpublished_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "viewFilters" : {
+        "type" : "operator",
+        "value" : "AND",
+        "children" : [ {
+          "type" : "operator",
+          "value" : "OR",
+          "children" : [ {
+            "type" : "operator",
+            "value" : "EQUALS",
+            "children" : [ {
+              "columnId" : 277506460,
+              "type" : "column"
+            }, {
+              "type" : "literal",
+              "value" : "delaware"
+            } ],
+            "metadata" : {
+              "freeform" : true
+            }
+          } ],
+          "metadata" : {
+            "tableColumnId" : {
+              "12954791" : 38245391
+            },
+            "freeform" : true,
+            "includeAuto" : 4,
+            "unifiedVersion" : 2,
+            "operator" : "EQUALS"
+          }
+        }, {
+          "type" : "operator",
+          "value" : "OR",
+          "metadata" : {
+            "tableColumnId" : {
+              "12954791" : 38245392
+            },
+            "operator" : "EQUALS",
+            "customValues" : [ [ "State" ] ]
+          }
+        }, {
+          "type" : "operator",
+          "value" : "OR",
+          "children" : [ {
+            "type" : "operator",
+            "value" : "EQUALS",
+            "children" : [ {
+              "columnId" : 277506462,
+              "type" : "column"
+            }, {
+              "type" : "literal",
+              "value" : "Volunteer Activities (2013-15)"
+            } ],
+            "metadata" : {
+              "freeform" : false
+            }
+          } ],
+          "metadata" : {
+            "tableColumnId" : {
+              "12954791" : 38245393
+            },
+            "operator" : "EQUALS"
+          }
+        } ],
+        "metadata" : {
+          "unifiedVersion" : 2
+        }
+      }
+    }
+  },
+  "data" : [ [ 2433, "C4197F8C-BD37-4E5B-9D88-F71617A09036", 2433, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Coach, referee, supervise sports team", "0.060797568000000003", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+, [ 2434, "7B6B8A8D-0403-42AD-8825-02244C247288", 2434, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Tutor or teach", "0.14361127200000001", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+, [ 2435, "0FB9C86C-1EBE-48E6-8DF1-284F77486317", 2435, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Mentor youth", "0.16387559300000001", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+, [ 2436, "A8533FC0-0FEC-49EE-A3C8-3723BB331475", 2436, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Be an usher, greeter, or minister", "0.13389795700000001", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+, [ 2437, "23266783-C91D-400E-9261-E594BBB0AD46", 2437, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Collect, prepare, distribute or serve food", "0.236929744", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+, [ 2438, "98765385-4F34-4F8B-AAEE-CA0808C872A6", 2438, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Collect, make, or distribute clothing", "0.15174185500000001", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+, [ 2439, "F942C65B-D959-48EF-94AD-2B2BFD2F3495", 2439, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Fundraise or sell items to raise money", "0.29251169900000001", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+, [ 2440, "1443F86E-E454-4FF8-B725-D8770773FC93", 2440, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Provide counseling, medical care, fire/EMS", "0.074371066", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+, [ 2441, "5BEACB0A-1F8D-4A44-A252-33A65618201A", 2441, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Provide general office services", "0.15825771299999999", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+, [ 2442, "6BA9A31A-A76A-43AB-A10D-B4F8D22FAE7E", 2442, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Provide professional or management", "0.17495164799999999", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+, [ 2443, "3610441E-33C8-4C78-ABB8-9F3FB95CF7FD", 2443, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Engage in music, performance, or other", "0.089176332999999997", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+, [ 2444, "2F1CDDD0-1F15-4676-9AC2-79DDE3BE4142", 2444, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Engage in general labor", "0.18735439400000001", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+, [ 2445, "C2C650BA-FEA5-4805-A8E1-93C7B485D25C", 2445, 1477428978, "969783", 1477428978, "969783", null, "Delaware", "State", "Volunteer Activities (2013-15)", "Any other type of activity/specify", "0.107749514", null, "2015", [ null, "39.318523", "-75.507141", null, false ] ]
+ ]
+}

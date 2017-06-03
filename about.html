@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   
+    <script src="http://maps.google.com/maps/api/js?sensor=false"
+            type="text/javascript"></script>
 
     <style>
         body {
@@ -120,6 +121,10 @@
             background-color: #f4511e;
             color: #fff;
         }
+        #icons{
+            padding: 15px;
+            margin-left: 60px;
+        }
         .navbar {
             margin-bottom: 0;
             background-color: #588c9f;
@@ -143,25 +148,14 @@
             border-color: transparent;
             color: #fff !important;
         }
-        .jumbotron{
-            background-color:#588c9f;
-            height: 100px;
-            margin-bottom: -10px;
-        }
-        #gform{
-    
-            height: 5px;
-     
-            
-        }
-        #gform button.btn.btn-default{
-            color:#588c9f;
-        }
         #tagline{
             padding: 20px;
         }
+        #content{
+            padding:80px;
+        }
         #googleMap{
-           
+            margin-bottom: 10px;
         }
         .glyphicon {
             position: relative;
@@ -237,9 +231,9 @@
             <a class="navbar-brand" href="index.html"><img src="img/NetworkDelawareBlueLogo.png" alt="DE~ Volunteer~ Portal" style="width:200px;height:50px;">
 </a>
         </div>
-       <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                 <li><a href="index.html">HOME</a></li>
+               <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="donor.html">DONATE</a></li>
                 <li><a href="volunteer.html">VOLUNTEER</a></li>
@@ -249,131 +243,46 @@
                 <li><a href="stats.html">STATISTICS</a></li>
             </ul>
         </div>
-    </div>
 </nav>
 <br>
 
+<div id="content">
+<h2 style="text-align:center">A Digital Tool For Change</h2>
+<p style="text-align:center">We have created a platform for volunteers and leaders to engage with each other in order to enact social change. By building a network we can help people in the communities they call home. Nobody knows the problems in a certain area better than the people who live there. By supplying volunteers, awareness, and funding in our network we can make Delaware a better place.</p>
+<h2 style="text-align:center">Connecting People with People</h2>
+<p style="text-align:center">Organizations need people to make change and volunteers need organizations to get involved with. Anyone with an idea or problem can create their own "site" to reach out to people in the area. With the amount of information available and ways to reach out we can combine all efforts into one organized site.<p>
+<h2 style="text-align:center">Areas of Interest</h2>
+<h4 style="text-align:center">Economic Justice</h4>
+<p style="text-align:center">Economic justice is a component of social justice. It's a set of moral principles for building economic institutions, the ultimate goal of which is to create an opportunity for each person to create a sufficient material foundation upon which to have a dignified, productive, and creative life beyond economics.<p>
+<h4 style="text-align:center">Youth Engagement</h4>
+<p style="text-align:center">Youth engagement is the result when young people are involved in responsible, challenging actions to create positive social change. This means involving youth in planning and in making decisions that affect themselves and others.<p>
+<h4 style="text-align:center">Electoral Politics</h4>
+<p style="text-align:center">Electoral politics focuses on building a robust structure to support candidates for local, state and federal offices. By identifying, recruiting, and coordinating training and mentorship for candidates we will be able to enact change at a political level. This pillar will also establish a comprehensive fundraising system and support the development of responsive political parties.<p>
+<h4 style="text-align:center">Community Creativity</h4>
+<p style="text-align:center">Solving problems can be complex, so looking at things in a different light can be beneficial. Art can inspire people to think bigger and think differently. That is why it is a vital asset for communities working to take on big problems or seize opportunities.<p>
+<h4 style="text-align:center">Racial Justice</h4>
+<p style="text-align:center">Racial justice is a proactive reinforcement of policies, practices, attitudes and actions that produce equitable power, access, opportunities, treatment, impacts and outcomes for all. Most people view racism primarily as the result of individual action: personal prejudice or stereotyping, and intentional acts of discrimination by individuals.  However, racism is also defined as a set of societal, cultural, and institutional beliefs and practices that subordinate and oppress one race for the benefit of another. However, a racial justice definition includes these beliefs and acts, but considers individual acts of prejudice only one dimension of racism.<p>
+</div>
 
+          
 
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-    <!--   <div id="tagline">
-          <h1>What would you like to do today?</h1>
-      </div> -->
-
-
-      <br>
-     <!-- <div class="row slideanim">-->
-          <div class="col-sm-4">
-              <span class="glyphicon glyphicon-user logo"></span>
-               <h2><a href=" orgarnize.html">Organize</a></h2>
-          </div>
-          <div class="col-sm-4">
-              <span class="glyphicon glyphicon-hand-up logo"></span>
-              <h2><a href=" volunteer.html">Volunteer</a></h2>
-          </div>
-          <div class="col-sm-4">
-              <span class="glyphicon glyphicon-gift logo"></span>
-               <h2><a href=" donor.html">Donate</a></h2>
-          </div>
-      </div>
-      
-    <br>
-    
-    
-    <div class="jumbotron text-center">
-    
-     <form class="form-inline">
-    <div id="gform">
-  <div class="form-group">
-    <label for="text">Enter your zipcode:</label>
-    <input type="text" class="form-control" id="zipcode">
-  </div>
-  <div class="form-group">
-    <label for="miles">Radius in miles:</label>
-    <input type="text" class="form-control" id="miles">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-    </div>
-</form>
-    
-</div> 
-
-<div id="map" style="width: 100%; height: 500px; alignment: "></div>
-
-<script>
-    function disableScrollingWithMouseWheel() {
-    map.setOptions({ scrollwheel: false });
-}
-
-
-   function initMap() {
-
-       var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 11,
-            center: {lat:39.7391, lng: -75.5398},
-        });
-        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-        var markers = locations.map(function(location, i) {
-            return new google.maps.Marker({
-                position: location,
-                label: labels[i % labels.length]
-            });
-        });
-
-       // Add a marker clusterer to manage the markers.
-        var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-       
-       
-       
-       
-    }
-
-
-    var locations = [
-        {lat:39.747591, lng:-75.547298},
-        {lat:39.743236, lng:-75.551463},
-        {lat:39.811145, lng:-75.554634},
-        {lat:39.741675, lng:-75.546317},
-        {lat:39.629433, lng:-75.745601},
-        {lat:39.802654, lng:-75.465481},
-        {lat:39.714285, lng:-75.594332},
-        {lat:38.648760, lng:-75.624884},
-        {lat:39.757818, lng:-75.606784},
-        {lat:39.740084, lng:-75.632837},
-        {lat:39.746716, lng:-75.546323},
-        {lat:39.765995, lng:-75.540802},
-        {lat:39.745181, lng:-75.547516},
-        {lat:39.683489, lng:-75.751900},
-        {lat:38.614085, lng:-75.202965},
-        {lat:39.751476, lng:-75.543523},
-        {lat:39.662916, lng:-75.750787},
-        {lat:39.745917, lng:-75.548781},
-        {lat:39.667799, lng:-75.701550}
-    ]
-    //(4) make sure you have all the following scripts imported in the page
-</script>
-
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-</script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATUeZx4Lx57ox5QL3lp17g4Rty-YqoXVA&callback=initMap">
-</script>
-
-
-
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
+<br>
 <footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
-    <p>Made By Delaware's Community Coders for  <a href="http://www.thenetworkde.org/" title="Visit Network Delaware">www.thenetworkde.org</a></p>
+    <div id="icons">
+    
+    <div class="col-sm-4">
+              <img src="img/facebookicon.png" alt="HTML5 Icon" style="width:128px;height:128px;">
+              <!-- <h2><a href=" orgarnizer.html">Organize</a></h2> -->
+          </div>
+          <div class="col-sm-4">
+             <img src="img/instagramicon.png" alt="HTML5 Icon" style="width:128px;height:128px;">
+          </div>
+          <div class="col-sm-4">
+              <!--<span class="glyphicon glyphicon-gift logo"></span>-->
+            <img src="img/twittericon.png" alt="HTML5 Icon" style="width:128px;height:128px;">
+          </div>
+    
+</div>
 </footer>
 
 
@@ -408,14 +317,6 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
         });
     })
 </script>
-    
-     
 
-<script type="text/javascript" src="js/jquery.serializejson.js"></script>
-
-<!-- Latest compiled and minified JavaScript -->
-
-
-<script src="js/scripts.js"></script>
 </body>
 </html>
