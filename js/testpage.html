@@ -7,17 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.min.css" rel="stylesheet" type="text/css">
-
-    <link href=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.css" rel="stylesheet" type="text/css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
-
-
-
 
     <style>
         body {
@@ -151,32 +142,16 @@
             border-color: transparent;
             color: #fff !important;
         }
-        .jumbotron{
-            background-color:#588c9f;
-            height: 100px;
-            margin-bottom: -10px;
-        }
-        #gform{
-    
-            height: 5px;
-     
-        }
-        
-        #gform button.btn.btn-default{
-            color:#588c9f;
-        }
-        
-        
         #tagline{
             padding: 20px;
         }
         #googleMap{
-           
+            margin-bottom: 10px;
         }
-     
         .glyphicon {
             position: relative;
             top: 10px;
+            font-size:50px;
             display: inline-block;
             font-family: 'Glyphicons Halflings';
             font-style: normal;
@@ -245,156 +220,221 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="img/NetworkDelawareBlueLogo.png" alt="DE~ Volunteer~ Portal" style="width:200px;height:50px;">
-</a>
+            <a class="navbar-brand" href="index.html">DE ~ Volunteer ~ Portal</a>
         </div>
-       <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                 <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="donor.html">DONATE</a></li>
-                <li><a href="volunteer.html">VOLUNTEER</a></li>
-                <li><a href="events.html">EVENTS</a></li>
-                 <li><a href="orgarnize.html">ORGANIZE</a></li>
-                <li><a href="training.html">TRAINING</a></li>
-                <li><a href="stats.html">STATISTICS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">TRAINNING</a></li>
+                <li><a href="#pricing">VIDEOS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
     </div>
 </nav>
 <br>
+<!--<div class="jumbotron text-center">
+    <h1>Company</h1>
+    <p>We specialize in blablabla</p>
+    <form>
+        <div class="input-group">
+            <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-danger">Subscribe</button>
+            </div>
+        </div>
+    </form>
+</div> -->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- <div class="container">
+   <div class="page-header">
+       <h1>Donor /Sponsor Page</h1>
+   </div>
+ <div class="jumbotron">
+       <h2>Donor /Sponsor Page</h2>
 
 
+</div>
 
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-    <!--   <div id="tagline">
-          <h1>What would you like to do today?</h1>
-      </div> -->
+</div>
+
+</body> -->
+<div id="Donor /Sponsor" class="container-fluid">
+    <div class="text-center">
+        <h2>Donor /Sponsor</h2>
+        <p>“It's not how much we give but how much love we put into giving.”
+            ― Mother Teresa</p>
+        <p>“When we give cheerfully and accept gratefully, everyone is blessed.”
+            ― Maya Angelou</p>
+        <h4>Please complete the form below to start.</h4>
 
 
-      <br>
-     <!-- <div class="row slideanim">-->
-          <div class="col-sm-4">
-              <span class="glyphicon glyphicon-user logo"></span>
-               <h2><a href=" orgarnize.html">Organize</a></h2>
-          </div>
-          <div class="col-sm-4">
-              <span class="glyphicon glyphicon-hand-up logo"></span>
-              <h2><a href=" volunteer.html">Volunteer</a></h2>
-          </div>
-          <div class="col-sm-4">
-              <span class="glyphicon glyphicon-gift logo"></span>
-               <h2><a href=" donor.html">Donate</a></h2>
-          </div>
-      </div>
-      
-    <br>
-    
-    
-    <div class="jumbotron text-center">
-    
-     <form class="form-inline">
-    <div id="gform">
-  <div class="form-group">
-    <label for="text">Enter your zipcode:</label>
-    <input type="text" class="form-control" id="zipcode">
-  </div>
-  <div class="form-group">
-    <label for="miles">Radius in miles:</label>
-    <input type="text" class="form-control" id="miles">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-    </div>
+</html>
+
+<div class="form-group">
+    <label for="name">Name :</label>
+    <input type="name" class="form-control" id="name">
+</div>
+<div class="form-group">
+    <label for="Organization">Organization (* Optional ):</label>
+    <input type="Organization" class="form-control" id="Organization">
+</div>
+<div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+</div>
+<div class="form-group">
+    <label for="Phone Number">Phone Number:</label>
+    <input type="Phone Number" class="form-control" id="Phone Number">
+</div>
+<div class="form-group">
+    <label for="Donate for a Cause">Donate for a Cause :</label>
+    <input type="Donate for a Cause" class="form-control" id="Donate for a Cause">
+</div>
+
+<select class="Donate for a Cause" id="Donate for a Cause" name="Donate for a Cause">
+    <option value="Pets">Animal Welfare</option>
+    <option value="Arts And Culture">Arts And Culture!</option>
+    <option value="Civic And Community ">Civic And Community </option>
+    <option value="Community Education">Community Education</option>
+    <option value="Mentoring">Mentoring</option>
+    <option value="Senior Services">Senior Services</option>
+
+</select>
+</div><div class="text-center">
+
+    <button id="memberButton" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<div class="form-group">
+</div><div class="text-center">
+    <label for="Amount of Donation">Amount of Donation:</label>
+    <input type="Amount of Donation" class="form-control" id="Amount of Donation">
+    <select class="Amount of Donation" id="Amount of Donation" name="Amount of Donation">
+        <option value="active">One Time Donation</option>
+        <option value="inactive">Monthly</option>
+        <option value="Gift-or-In-Honor of ">Gift-or-In-Honor of</option>
+
+    </select>
+</div><div class="text-center">
+
+    <button id="memberButton" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
 </form>
-    
-</div> 
-
-<div id="map" style="width: 100%; height: 500px; alignment: "></div>
-
-<script>
-    function disableScrollingWithMouseWheel() {
-    map.setOptions({ scrollwheel: false });
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 46b85c509828c8b8358e18d7c275c2ee88533368
-    
-   
-
-   function initMap() {
-
-       var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 11,
-            center: {lat:39.7391, lng: -75.5398},
-        });
-        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-        var markers = locations.map(function(location, i) {
-            return new google.maps.Marker({
-                position: location,
-                label: labels[i % labels.length]
-            });
-           
-            marker.addListener('click', toggleBounce); 
-        });
-     
+</div>
+<!-- <input type="text" class="form-control" id="status" name="status" value="active"> -->
 
 
-       // Add a marker clusterer to manage the markers.
-        var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-       
-       map.setOptions({draggable: false, zoomControl: false, scrollwheel: false, disableDoubleClickZoom: false});
-      
-       
-    }
-    
-      function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
-}
-   
 
 
-    var locations = [
-        {lat:39.747591, lng:-75.547298},
-        {lat:39.743236, lng:-75.551463},
-        {lat:39.811145, lng:-75.554634},
-        {lat:39.741675, lng:-75.546317},
-        {lat:39.629433, lng:-75.745601},
-        {lat:39.802654, lng:-75.465481},
-        {lat:39.714285, lng:-75.594332},
-        {lat:38.648760, lng:-75.624884},
-        {lat:39.757818, lng:-75.606784},
-        {lat:39.740084, lng:-75.632837},
-        {lat:39.746716, lng:-75.546323},
-        {lat:39.765995, lng:-75.540802},
-        {lat:39.745181, lng:-75.547516},
-        {lat:39.683489, lng:-75.751900},
-        {lat:38.614085, lng:-75.202965},
-        {lat:39.751476, lng:-75.543523},
-        {lat:39.662916, lng:-75.750787},
-        {lat:39.745917, lng:-75.548781},
-        {lat:39.667799, lng:-75.701550}
-    ]
-    //(4) make sure you have all the following scripts imported in the page
->>>>>>> 46b85c509828c8b8358e18d7c275c2ee88533368
-</script>
-<script src="js/scripts.js"></script>
-<script src="../js/soda-js.bundle.js"></script>
-<!--<script src="../js/mapdata.js"></script>-->
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-</script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATUeZx4Lx57ox5QL3lp17g4Rty-YqoXVA&callback=initMap">
-</script>
+
+
+
+
+
+
+
+
+<!-- Container (Pricing Section)
+<div id="pricing" class="container-fluid">
+    <div class="text-center">
+        <h2>Pricing</h2>
+        <h4>Choose a payment plan that works for you</h4>
+    </div>
+    <div class="row slideanim">
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Basic</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>20</strong> Lorem</p>
+                    <p><strong>15</strong> Ipsum</p>
+                    <p><strong>5</strong> Dolor</p>
+                    <p><strong>2</strong> Sit</p>
+                    <p><strong>Endless</strong> Amet</p>
+                </div>
+                <div class="panel-footer">
+                    <h3>$19</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Pro</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>50</strong> Lorem</p>
+                    <p><strong>25</strong> Ipsum</p>
+                    <p><strong>10</strong> Dolor</p>
+                    <p><strong>5</strong> Sit</p>
+                    <p><strong>Endless</strong> Amet</p>
+                </div>
+                <div class="panel-footer">
+                    <h3>$29</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Premium</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>100</strong> Lorem</p>
+                    <p><strong>50</strong> Ipsum</p>
+                    <p><strong>25</strong> Dolor</p>
+                    <p><strong>10</strong> Sit</p>
+                    <p><strong>Endless</strong> Amet</p>
+                </div>
+                <div class="panel-footer">
+                    <h3>$49</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+
+<!-- Add Google Maps -->
+<!--<div id="googleMap" style="height:500px;width:100%;"></div>-->
+<!--<script>-->
+<!--function myMap() {-->
+<!--var myCenter = new google.maps.LatLng(39.7490337,-75.5484009);-->
+
+<!--var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};-->
+<!--var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);-->
+<!--var marker = new google.maps.Marker({position:myCenter});-->
+<!--marker.setMap(map);-->
+<!--}-->
+<!--</script>-->
+
 
 
 
@@ -411,29 +451,34 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 </footer>
 
 
- <script>
-      $(document).ready(function(){
+<script>
+    $(document).ready(function(){
         // Add smooth scrolling to all links in navbar + footer link
         $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
             // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
                 // Prevent default anchor click behavior
                 event.preventDefault();
+
                 // Store hash
                 var hash = this.hash;
+
                 // Using jQuery's animate() method to add smooth page scroll
                 // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
                 }, 500, function(){
+
                     // Add hash (#) to URL when done scrolling (default click behavior)
                     window.location.hash = hash;
                 });
             } // End if
         });
+
         $(window).scroll(function() {
             $(".slideanim").each(function(){
                 var pos = $(this).offset().top;
+
                 var winTop = $(window).scrollTop();
                 if (pos < winTop + 600) {
                     $(this).addClass("slide");
@@ -442,20 +487,6 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
         });
     })
 </script>
-
-
-
-<!-- table end-->
-
-     
-
-<script type="text/javascript" src="js/jquery.serializejson.js"></script>
-<script type="text/javascript" src="js/mapdata.js"></script>
-
-<!-- Latest compiled and minified JavaScript -->
-
-
-
 
 </body>
 </html>
