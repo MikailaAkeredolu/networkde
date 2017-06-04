@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Network Delaware volunteer Portal </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table id="location" border='1'>
+    <tr>
+        <th>Location Name</th>
+        <th>Location Type</th>
+        <th>Value Category</th>
+        <th>value Name</th>
+        <th>Co-ordinate</th>
+    </tr>
+</table>
+
+<script>
+    $(document).ready(function(){
+        $.ajax(
+            {
+                url: 'https://data.nationalservice.gov/resource/5vrv-88b8.json',
+                type: "get",
+                data: {location_name:'Delaware'},
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                cache: false,
+                success: function (data) {
+                    var trHTML = '';
+                    $.each(data, function (i, item) {
+                        trHTML += '<tr><td>'+ item.location_name   +'</td><td>'+ item.location_type + '</td><td>' + item.value_category + '</td><td>' +  item.value_name +'</td><td>'+ item.location.coordinates[0]+','+ item.location.coordinates[1]  +'</td></tr>';
+                    });
+                    $('#location').append(trHTML);
+                },
+                error: function (msg) {
+                    alert(msg.responseText);
+                }
+            });
+    })
+</script>
+</body>
+</html>
