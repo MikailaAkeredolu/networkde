@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.min.css" rel="stylesheet" type="text/css">
+
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.css" rel="stylesheet" type="text/css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+
+
+
 
     <style>
         body {
@@ -306,56 +314,10 @@
     map.setOptions({ scrollwheel: false });
 }
 
-
-   function initMap() {
-
-       var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 11,
-            center: {lat:39.7391, lng: -75.5398},
-        });
-        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-        var markers = locations.map(function(location, i) {
-            return new google.maps.Marker({
-                position: location,
-                label: labels[i % labels.length]
-            });
-        });
-
-       // Add a marker clusterer to manage the markers.
-        var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-       
-       
-       
-       
-    }
-
-
-    var locations = [
-        {lat:39.747591, lng:-75.547298},
-        {lat:39.743236, lng:-75.551463},
-        {lat:39.811145, lng:-75.554634},
-        {lat:39.741675, lng:-75.546317},
-        {lat:39.629433, lng:-75.745601},
-        {lat:39.802654, lng:-75.465481},
-        {lat:39.714285, lng:-75.594332},
-        {lat:38.648760, lng:-75.624884},
-        {lat:39.757818, lng:-75.606784},
-        {lat:39.740084, lng:-75.632837},
-        {lat:39.746716, lng:-75.546323},
-        {lat:39.765995, lng:-75.540802},
-        {lat:39.745181, lng:-75.547516},
-        {lat:39.683489, lng:-75.751900},
-        {lat:38.614085, lng:-75.202965},
-        {lat:39.751476, lng:-75.543523},
-        {lat:39.662916, lng:-75.750787},
-        {lat:39.745917, lng:-75.548781},
-        {lat:39.667799, lng:-75.701550}
-    ]
-    //(4) make sure you have all the following scripts imported in the page
 </script>
-
+<script src="js/scripts.js"></script>
+<script src="../js/soda-js.bundle.js"></script>
+<!--<script src="../js/mapdata.js"></script>-->
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
 </script>
 <script async defer
@@ -408,14 +370,20 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
         });
     })
 </script>
-    
+
+
+
+<!-- table end-->
+
      
 
 <script type="text/javascript" src="js/jquery.serializejson.js"></script>
+<script type="text/javascript" src="js/mapdata.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 
 
-<script src="js/scripts.js"></script>
+
+
 </body>
 </html>
