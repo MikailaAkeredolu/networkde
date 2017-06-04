@@ -152,17 +152,20 @@
     
             height: 5px;
      
-            
         }
+        
         #gform button.btn.btn-default{
             color:#588c9f;
         }
+        
+        
         #tagline{
             padding: 20px;
         }
         #googleMap{
            
         }
+     
         .glyphicon {
             position: relative;
             top: 10px;
@@ -306,6 +309,8 @@
     map.setOptions({ scrollwheel: false });
 }
 
+    
+   
 
    function initMap() {
 
@@ -320,16 +325,29 @@
                 position: location,
                 label: labels[i % labels.length]
             });
+           
+            marker.addListener('click', toggleBounce); 
         });
+     
+
 
        // Add a marker clusterer to manage the markers.
         var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
        
-       
-       
+       map.setOptions({draggable: false, zoomControl: false, scrollwheel: false, disableDoubleClickZoom: false});
+      
        
     }
+    
+      function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+   
 
 
     var locations = [
