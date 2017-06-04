@@ -144,6 +144,43 @@
             border-color: transparent;
             color: #fff !important;
         }
+             .sidenav {
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #568CA0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FEB733;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 10%;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+    #resource {
+    transition: margin-left .5s;
+    padding: 16px;
+}
         #tagline{
             padding: 20px;
         }
@@ -238,20 +275,40 @@
         </div>
 </nav>
 <br>
-<!--<div class="jumbotron text-center">
-    <h1>Company</h1>
-    <p>We specialize in blablabla</p>
-    <form>
-        <div class="input-group">
-            <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-            <div class="input-group-btn">
-                <button type="button" class="btn btn-danger">Subscribe</button>
-            </div>
+
+<div id="mySidenav" class="sidenav">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="events.html"class=disable><u> Links for Volunteer's</u></a>
+    <a href="http://pbskids.org/itsmylife/emotions/volunteering/article10.html">How to be a Good Volunteer</a>
+    <a href="https://www.forbes.com/sites/michaellindenmayer/2013/06/03/7-traits-of-amazing-volunteers/#65bfd137220f">7 traits of Amazing Volunteers</a>
+    <a href="https://www.networkforgood.org/volunteer/volunteertips.aspx">Tips Volunteer Tips</a>
+    <a href="http://www.volunteerdelaware.org/servlet/servlet.FileDownload?file=015A0000004zBNf">Get Credits for Volunteering</a>
+
+</div>
+
+<div id="services" class="container-fluid text-center">
+
+
+    <div id="resource" class= "container-fluid">
+        <div class="text-left">
+
+
+            <span style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776; Resource Links For Volunteer</span>
         </div>
-    </form>
-</div> -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "300px";
+                document.getElementById("resource").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
 
-
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("resource").style.marginLeft= "0";
+                document.body.style.backgroundColor = "white";
+            }
+        </script>
 
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
