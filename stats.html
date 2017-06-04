@@ -25,6 +25,7 @@
             color: #303030;
             font-weight: 600;
             margin-bottom: 30px;
+            text-align: center;
         }
         h4 {
             font-size: 19px;
@@ -238,9 +239,74 @@
         </div>
     </div>
 </nav>
+   
+    <br>
+    <h2>Statistics on what people volunteer for in Delaware</h2>
+<div><iframe width="98%" title="Pie Chart Data" height="646px" src="https://data.nationalservice.gov/w/7gqf-j4gs/?cur=LJsRlZ2U7Md&from=root" frameborder="0"scrolling="no"><a href="https://data.nationalservice.gov/National-Service/Pie-Chart-Data/7gqf-j4gs" title="Pie Chart Data" target="_blank">Pie Chart Data</a></iframe></div>
 <br>
-<div><iframe width="100%" title="Pie Chart Data" height="646px" src="https://data.nationalservice.gov/w/7gqf-j4gs/?cur=LJsRlZ2U7Md&from=root" frameborder="0"scrolling="no"><a href="https://data.nationalservice.gov/National-Service/Pie-Chart-Data/7gqf-j4gs" title="Pie Chart Data" target="_blank">Pie Chart Data</a></iframe><p><a href="http://www.socrata.com/" target="_blank">Powered by Socrata</a></p></div>
+     <br>
+        <style>
+        tr{
+            border-color:cadetblue;
+          
+        }
+        
+        body{
+            border-color:cadetblue;
+         
+        }
+        th{
+            color:cadetblue;
+            text-align: center;
+             
+        }
+            table{
+                margin-left: 150px;
+                padding: 50px;
+            }
+       
+    </style>
+    <h2>Delaware - Volunteer Rate by year via data.nationalservice.gov</h2>
+    <br>
+<table id="location" border='1'>
+    <tr>
+        <th>Location Name</th>
+        <th>Location Type</th>
+        <th>Value Category</th>
+        <th>value Name</th>
+        <th>Co-ordinate</th>
+    </tr>
+</table>
 
+<script>
+    $(document).ready(function(){
+        $.ajax(
+            {
+                url: 'https://data.nationalservice.gov/resource/5vrv-88b8.json',
+                type: "get",
+                data: {location_name:'Delaware'},
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                cache: false,
+                success: function (data) {
+                    var trHTML = '';
+                    $.each(data, function (i, item) {
+                        trHTML += '<tr><td>'+ item.location_name   +'</td><td>'+ item.location_type + '</td><td>' + item.value_category + '</td><td>' +  item.value_name +'</td><td>'+ item.location.coordinates[0]+','+ item.location.coordinates[1]  +'</td></tr>';
+                    });
+                    $('#location').append(trHTML);
+                },
+                error: function (msg) {
+                    alert(msg.responseText);
+                }
+            });
+    })
+</script>
+    <br>
+     <h2>Certified state vendors owned by veterans and morities that orgarnizers can leverage as sponsors</h2>
+     <div><iframe width="98%" title="CC Business Map" height="646px" src="https://data.delaware.gov/w/87es-atzq/989r-3cju?cur=mW2s6Is4dZ0&from=root" frameborder="0"scrolling="no"><a href="https://data.delaware.gov/Economic-Development/CC-Business-Map/87es-atzq" title="CC Business Map" target="_blank">CC Business Map</a></iframe>
+      
+      
+      <p><a href="http://www.socrata.com/" target="_blank">Powered by Socrata</a></p></div>
 
 <!--
 To use this code on your website, get a free API key from Google.
