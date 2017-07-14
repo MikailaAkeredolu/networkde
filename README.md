@@ -1,4 +1,5 @@
-# communitycoders
+
+# communitycoders (Quick Hack put together for weekend hackathon onsite)
  Further resources on the MIT License
 Copyright <YEAR> <COPYRIGHT HOLDER>
 
